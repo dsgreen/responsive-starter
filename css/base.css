@@ -1,0 +1,709 @@
+/* 	
+	Responsive Starter 04.15.13
+	Doug Green: douglasgreen.com
+	
+	Inspiration:
+	http://twitter.github.io/bootstrap/
+	http://foundation.zurb.com/
+	http://www.getskeleton.com/
+	http://html5boilerplate.com/
+*/
+
+/* RESET
+-------------------------------------- */
+body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, td, th, address, blockquote, pre, code, form, fieldset, legend, input, textarea { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+fieldset, img, input, select, textarea { border: none; }
+input, textarea, select { font-family: inherit;	font-size: inherit;	font-weight: inherit; }
+address, cite { font-style: normal; }
+table { border-collapse: collapse; }
+caption, th { text-align: left; }
+ul li { list-style-type: none; }
+a { text-decoration: none; }
+section, article, header, footer, nav, aside, hgroup { display: block; }
+
+/* TYPE
+-------------------------------------- */
+/* --- MOBILE + --- */
+/* 
+ * type references:
+ * original method:  http://clagnut.com/blog/348/
+ * updated approach: http://snook.ca/archives/html_and_css/font-size-with-rem
+ * more thoughts:    http://css-tricks.com/css-font-size/
+ * 
+ */
+body {
+	font: 62.5%/2.4em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+/* the basics */
+h1 {
+	font-size: 2.4em;
+	line-height: 1em;
+}
+h2 {
+	font-size: 1.8em;
+	line-height: 1.333em;
+}
+h3, h4, h5, h6, dt, legend, caption {
+	font-size: 1.4em;
+	line-height: 1.7143em;
+}
+h1, h2, h3, h4, h5, h6, dt, legend, caption, th {
+	font-weight: bold;
+}
+p, li, dd, td, th, label, input, select, textarea, address, blockquote {
+	font-size: 1.4em;
+	line-height: 1.7143em;
+}
+p, dd, address, blockquote {
+	margin-bottom: 1.7143em;
+}
+ul li ul {
+	margin-bottom: 0;
+}
+table, ul, ol, dl {
+	margin-bottom: 2.4em;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+/* nested sizes */
+li li, li p, td p, blockquote p {
+	font-size: 1em;
+}
+/* extra formatting */
+ul, ol {
+	margin-left: 4.5em;
+}
+ul li {
+	list-style-type: disc;
+}
+th, td {
+	width: 5.8em;
+}
+blockquote {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+blockquote span.author {
+	padding-right: 1em;
+	display: block;
+	text-align: right;
+}
+abbr[title]:hover {
+	cursor: help;
+}
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+	blockquote { width: 80%; }
+}
+/* --- DESKTOP 980+ --- */
+@media only screen and (min-width: 980px) {
+	blockquote { width: 70%; }
+}
+/* FORMS
+-------------------------------------- */
+/* --- MOBILE + --- */
+/* form elements not aligned to baseline grid */
+label {
+	display: block;
+	font-weight: bold;
+}
+input, select, textarea {
+	margin-bottom: 0.5em;
+	padding: 0.4em;
+	width: 95%;
+}
+input, select {
+	width: 95%;
+}
+.radio input, .checkbox input, input[type="radio"], input[type="checkbox"] {
+	width: auto;
+	float: left;
+	margin: 0.4em;
+}
+.radio label, .checkbox label {
+	float: left;
+}
+.radio, .checkbox {
+	clear: both;
+}
+.radio p, .checkbox p {
+	margin-bottom: 0;
+}
+input.btn, input[type="submit"] {
+	margin: 1em 0;
+	padding: 0.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 10em;
+	clear: both;
+	border-radius: 0.4em;
+	transition: all 0.1s ease;
+}
+label.hidden {
+	margin-left: -10000em;
+	width: 0;
+	float: none;
+}
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+	input, select, textarea {
+		width: 30em;
+	}
+	input, select {
+		width: 15em;
+	}
+}
+/* LAYOUT
+-------------------------------------- */
+/* --- MOBILE + --- */
+/* padding for small displays */
+body {
+	padding: 0 1em;
+}
+/* header title */
+body>header p {
+	font-weight: bold;
+}
+#content,
+body>footer {
+	clear: both;
+}
+/* main navigation list */
+body>header nav a {
+	display: block;
+	border-radius: 0.2em;
+	padding: 0.25em 0.5em;
+}
+body>header nav ul {
+	margin-left: 0;
+	font-weight: bold;
+}
+body>header nav li {
+	list-style-type: none;
+	margin-bottom: 0.25em;
+}	
+/* footer */
+body>footer p {
+	font-size: 1.2em;
+	line-height: 2em;
+	clear: both;
+}
+body>footer p.top {
+	clear: none;
+}
+/* skiplink */
+#skiplink a {
+	width: 0;
+	height: 0;
+	position: absolute;
+	overflow: hidden;
+}
+#skiplink a:active, 
+#skiplink a:focus {
+	padding: 0.2em;
+	font-size: 1.2em;
+	font-weight: bold;
+	width: auto;
+	height: auto;
+	overflow: visible;
+	top: 0.2em;
+	left: 0.2em;
+	z-index: 5;
+}
+/* --- MOBILE LANDSCAPE / 7" TABLET PORTRAIT + --- */
+@media only screen and (min-width: 480px) {
+	/* linear main navigation bar */
+	body>header nav ul,
+	body>header nav li,
+	body>header nav a {
+		float: left;
+	}
+	body>header nav a {
+		padding: 0 0.5em;
+		display: block;
+	}
+}
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+	/* padding on #content div */
+	body {
+		padding: 0;
+	}
+	/* set a fixed size container & center it */
+	body>header div.wrap,
+	body>footer div.wrap,
+	#content {
+		margin: 0 auto;
+		padding: 0 0.5em;
+		width: 75.8em;
+	}
+}
+/* --- DESKTOP 980+ --- */
+@media only screen and (min-width: 980px) {
+	body>header div.wrap,
+	body>footer div.wrap,
+	#content {
+		padding: 0 1em;
+		width: 96em;
+	}
+}
+/* CLASSES
+-------------------------------------- */
+/* general */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+/* http://css-tricks.com/snippets/css/clear-fix/ */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.hidden {
+	visibility: hidden;
+	height: 0;
+	width: 0;
+}
+.offscreen {
+	text-indent: -10000em;
+}
+img.flex {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+/* button style */
+a.btn {
+	padding: 0.25em 0.5em;
+	font-weight: bold;
+	border-radius: 0.2em;
+	transition: all 0.1s ease;
+}
+.divider {
+	margin: 2em 0;
+}
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+	/* back to top links */
+	.top {
+		font-weight: bold;
+		text-align: right;
+	}
+}
+/* GRID
+-------------------------------------- */
+/* columns */
+.row, .col {
+		margin-bottom: 1.8em;
+		display: block; }
+form .row {
+	margin-bottom: 0;
+}
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+/* 
+ 	Columns:
+ 	
+ 	total width    768 px
+	columns        758 px
+	outer padding    5 px
+	column width    54 px
+	column spacing  10 px
+	--
+	12 columns total
+*/
+	.col {				float: left;
+						margin-bottom: 0;
+						margin-right: 1em; }
+	/* 1 col */
+	.span-1 {			width: 5.4em;	}
+	/* 2 cols */
+	.span-2 {			width: 11.8em;	}
+	/* 3 cols / 1/4 */
+	.span-3,
+	.one-quarter {		width: 18.2em;	}
+	/* 4 cols / 1/3 */
+	.span-4,
+	.one-third {		width: 24.6em;	}
+	/* 5 cols */
+	.span-5 {			width: 31em;	}
+	/* 6 cols / 1/2 */
+	.span-6,
+	.half {				width: 37.4em;	}
+	/* 7 cols */
+	.span-7 {			width: 43.8em;	}
+	/* 8 cols / 2/3 */
+	.span-8,
+	.two-thirds {		width: 50.2em;	}
+	/* 9 cols / 3/4 */
+	.span-9,
+	.three-quarters {	width: 56.6em;	}
+	/* 10 cols */
+	.span-10 {			width: 63em;	}
+	/* 11 cols */
+	.span-11 {			width: 69.4em; 	}
+	/* 12 cols / full width */
+	.span-12,
+	.full {				margin-right: 0;
+						width: 75.8em;	}
+	/* remove right margin on last column in a row */
+	.col.last {			margin-right: 0; }
+	/* offsets */
+	.offset-1 {		margin-left: 6.4em;	 }
+	.offset-2 {		margin-left: 12.8em; }
+	.offset-3 {		margin-left: 19.2em; }
+	.offset-4 {		margin-left: 25.6em; }
+	.offset-5 {		margin-left: 32em; }
+	.offset-6 {		margin-left: 38.4em; }
+	.offset-7 {		margin-left: 44.8em; }
+	.offset-8 {		margin-left: 51.2em; }
+	.offset-9 {		margin-left: 57.6em; }
+	.offset-10 {	margin-left: 64em;	 }
+	.offset-11 {	margin-left: 70.4em; }
+
+}
+/* --- DESKTOP 980+ --- */
+@media only screen and (min-width: 980px) {
+/* 
+ 	Columns:
+ 	
+ 	total width    980 px
+	columns        960 px
+	outer padding   10 px
+	column width    69 px
+	column spacing  12 px
+	--
+	12 columns total
+*/
+	.col {				margin-right: 1.2em; }
+	/* 1 col */
+	.span-1 {			width: 6.9em;	}
+	/* 2 cols */
+	.span-2 {			width: 15em;	}
+	/* 3 cols / 1/4 */
+	.span-3,
+	.one-quarter {		width: 23.1em;	}
+	/* 4 cols / 1/3 */
+	.span-4,
+	.one-third {		width: 31.2em;	}
+	/* 5 cols */
+	.span-5 {			width: 39.3em;	}
+	/* 6 cols / 1/2 */
+	.span-6,
+	.half {				width: 47.4em;	}
+	/* 7 cols */
+	.span-7 {			width: 55.5em;	}
+	/* 8 cols / 2/3 */
+	.span-8,
+	.two-thirds {		width: 63.6em;	}
+	/* 9 cols / 3/4 */
+	.span-9,
+	.three-quarters {	width: 71.7em;	}
+	/* 10 cols */
+	.span-10 {			width: 79.8em;	}
+	/* 11 cols */
+	.span-11 {			width: 87.9em;	}
+	/* 12 cols / full width */
+	.span-12,
+	.full {				margin-right: 0;
+						width: 96em;	}
+	/* offsets */
+	.offset-1 {		margin-left: 8.1em;	 }
+	.offset-2 {		margin-left: 16.2em; }
+	.offset-3 {		margin-left: 24.3em; }
+	.offset-4 {		margin-left: 32.4em; }
+	.offset-5 {		margin-left: 40.5em; }
+	.offset-6 {		margin-left: 48.6em; }
+	.offset-7 {		margin-left: 56.7em; }
+	.offset-8 {		margin-left: 64.8em; }
+	.offset-9 {		margin-left: 72.9em; }
+	.offset-10 {	margin-left: 81em;	 }
+	.offset-11 {	margin-left: 89.1em; }
+}
+/* BASIC 2 COLUMN LAYOUT
+-------------------------------------- */
+/* --- MOBILE + --- */
+/* sidebar */
+#secondary {
+	margin-top: 1em;
+}
+/* sidebar navigation/link list */
+#secondary ul {
+	margin-left: 0;
+}
+#secondary li {
+	margin-bottom: 0.5em;
+	list-style-type: none;
+}
+#secondary nav a {
+	display: block;
+}
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+	#main {
+		float: left;
+	}
+	#secondary { 
+		margin-top: 0;
+		float: right;
+	}
+	/* smaller font sizes for common elements in sidebar */
+	#secondary h2,
+	#secondary p,
+	#secondary li {
+		font-size: 1.2em;
+		line-height: 1.8em;
+	}
+	#secondary h2 {
+		text-transform: uppercase;
+	}
+}
+/* COLOR
+-------------------------------------- */
+/* --- MOBILE + --- */
+body {
+	color: #333;
+	background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, th, th a, legend {
+	color: #333;
+}
+a, a:link, a:active, a:visited {
+	color: #33c;
+}
+a:hover, a:focus {
+	color: #66c;
+}
+body>header p a,
+body>header p a:link,
+body>header p a:active,
+body>header p a:visited {
+	color: #333;
+}
+body>header p a:hover, body>header p a:focus {
+	color: #66c;
+}
+/* main navigation
+ * btn style
+ * secondary nav */
+body>header nav a, 
+a.btn {
+	color: #1A1A1A;
+	background-color: #DADADA;
+}
+body>header nav a:link,
+body>header nav a:active,
+body>header nav a:visited {
+	color: #1A1A1A;
+}
+body>header nav a:hover,
+body>header nav a:focus,
+a.btn:hover,
+a.btn:focus,
+input.btn:hover,
+input.btn:focus {
+	color: #fff;
+	background-color: #333;
+}
+body>header nav li {
+	margin-bottom: 0.25em;
+}
+/* --- MOBILE LANDSCAPE / 7" TABLET PORTRAIT + --- */
+@media only screen and (min-width: 480px) {
+	/* main navigation */
+	body>header nav a {
+		background: none;
+	}
+	body>header nav li {
+		margin-bottom: 0;
+	}
+}
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+	/* for solid color header and footer */
+	html,
+	body>header,
+	body>footer {
+		background-color: #eaeaea;
+	}
+	body>footer,
+	body>footer p,
+	body>footer a,
+	body>footer a:link,
+	body>footer a:active,
+	body>footer a:visited {
+		color: #666;
+	}
+}
+/* --- DESKTOP 980+ --- */
+@media only screen and (min-width: 980px) {
+	/* keep things lined up vertically
+	   accounts for padding and background color on a:hover */
+	body>header nav .first a { 
+		margin-left: -0.5em;
+	}
+}
+#skiplink a:active,
+#skiplink a:focus {
+	border: 0.2em solid #ccc;
+	background-color: #dadada;
+}
+abbr[title] {
+	border-bottom: 0.1em dotted #888;
+}
+/* forms */
+input, select, textarea {
+	border: 0.1em solid #eaeaea;
+}
+input[type="radio"], input[type="checkbox"] {
+	border: none;
+}
+input:hover, input:focus, input:active, 
+textarea:hover, textarea:focus, textarea:active, 
+select:hover, select:focus, select:active, 
+input.btn:hover, input.btn:focus {
+	border-color: #ccc;
+}
+.req {
+	color: red;
+}
+/* other */
+.comment {
+	margin-bottom: -0.1em;
+	border-bottom: 0.1em solid #eaeaea;
+}
+.author {
+	color: #333;
+}
+/* IE
+-------------------------------------- */
+.ie {}
+.ie9 {}
+.ie8 {}
+.ie7 {}
+.lte-ie9 {}
+.lt-ie9 {}
+.lt-ie8 {}
+textarea {
+	overflow: auto;
+}
+/* 
+ * IE8 doesn't support media queries. Link to an alternate style sheet with conditional comments
+ * and include desktop styles if desired. Otherwise, IE8 gets the mobile version.
+ * 
+ * */
+/* GRID IMAGE
+-------------------------------------- */
+/* 
+ * Display a grid image two different ways.
+ * 
+ * 1. Display a repeating grid overlay:
+ * 
+ * - Uncomment in main document: <!-- <div id="grid"></div> -->
+ * - Uncomment the following.
+ * 
+ *  */
+/*
+html {
+   position: relative;
+}
+#grid {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+*/
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+	#grid {
+		/* 758 grid width, 54 column width, 10 column spacing, 24 baseline rhythm */
+		/*background: url('../images/758w-54c-10c-24h.png') repeat-y center top;*/
+		/* 758 grid width, 54 column width, 10 column spacing, no baseline */
+		/*background: url('../images/960w-69c-12c.png') repeat-y center top;*/
+	}
+}
+/* --- DESKTOP 980+ --- */
+@media only screen and (min-width: 980px) {
+	#grid {
+		/* 960 grid width, 69 column width, 12 column spacing, 24 baseline rhythm */
+		/*background: url('../images/960w-69c-12c-24h.png') repeat-y center top;*/
+		/* 960 grid width, 69 column width, 12 column spacing, no baseline */
+		/*background: url('../images/960w-69c-12c.png') repeat-y center top;*/
+	}
+}
+
+/* 
+ * 2. Display a grid background image:
+ * 
+ * - Uncomment the following.
+ * - Add any major layout elements with background colors to the first rule.
+ * 
+ * */
+/*
+html, body, body>header, body>footer {
+	background-color: transparent;
+}
+*/
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {
+	html {
+		/* 758 grid width, 54 column width, 10 column spacing, 24 baseline rhythm */
+		/*background: url('../images/758w-54c-10c-24h.png') repeat-y center top;*/
+		/* 758 grid width, 54 column width, 10 column spacing, no baseline */
+		/*background: url('../images/960w-69c-12c.png') repeat-y center top;*/
+	}
+}
+/* --- DESKTOP 980+ --- */
+@media only screen and (min-width: 980px) {
+	html {
+		/* 960 grid width, 69 column width, 12 column spacing, 24 baseline rhythm */
+		/*background: url('../images/960w-69c-12c-24h.png') repeat-y center top;*/
+		/* 960 grid width, 69 column width, 12 column spacing, no baseline */
+		/*background: url('../images/960w-69c-12c.png') repeat-y center top;*/
+	}
+}
+
+/* OTHER OPTIONS
+-------------------------------------- */
+/* 
+ * Logo: image replacement option 
+ * - specify width, height, and source of image
+ * */
+/*
+body>header p {
+	margin: 0;
+	width: 000px;
+	height: 000px;
+	position: relative;
+	overflow: hidden;
+}
+body>header p span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url(../img/your-logo.png);
+}
+*/

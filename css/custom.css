@@ -1,0 +1,33 @@
+/* 	
+	Responsive Starter 04.15.13
+	Site specific styles
+*/
+/* TYPE
+-------------------------------------- */
+
+
+/* FORMS
+-------------------------------------- */
+
+
+/* LAYOUT
+-------------------------------------- */
+/* --- MOBILE + --- */
+
+/* --- MOBILE LANDSCAPE / 7" TABLET PORTRAIT + --- */
+@media only screen and (min-width: 480px) {}
+
+/* --- TABLET PORTRAIT + --- */
+@media only screen and (min-width: 768px) {}
+
+/* --- DESKTOP 980+ --- */
+@media only screen and (min-width: 980px) {}
+
+
+/* CLASSES
+-------------------------------------- */
+
+
+/* COLOR
+-------------------------------------- */
+
