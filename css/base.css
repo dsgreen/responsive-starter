@@ -642,7 +642,7 @@ html {
 		/* 758 grid width, 54 column width, 10 column spacing, 24 baseline rhythm */
 		/*background: url('../images/758w-54c-10c-24h.png') repeat-y center top;*/
 		/* 758 grid width, 54 column width, 10 column spacing, no baseline */
-		/*background: url('../images/960w-69c-12c.png') repeat-y center top;*/
+		/*background: url('../images/758w-54c-10c.png') repeat-y center top;*/
 	}
 }
 /* --- DESKTOP 980+ --- */
@@ -673,7 +673,7 @@ html, body, body>header, body>footer {
 		/* 758 grid width, 54 column width, 10 column spacing, 24 baseline rhythm */
 		/*background: url('../images/758w-54c-10c-24h.png') repeat-y center top;*/
 		/* 758 grid width, 54 column width, 10 column spacing, no baseline */
-		/*background: url('../images/960w-69c-12c.png') repeat-y center top;*/
+		/*background: url('../images/758w-54c-10c.png') repeat-y center top;*/
 	}
 }
 /* --- DESKTOP 980+ --- */
