@@ -312,6 +312,8 @@ a.btn {
 	}
 }
 /* GRID
+ * - horizontal scroll appears in FireFox when resizing
+ * - Firefox seems to take vertical scroll track into consideration when calculating window size
 -------------------------------------- */
 /* columns */
 .row, .col {
@@ -538,6 +540,11 @@ body>header nav li {
 	body>header nav li {
 		margin-bottom: 0;
 	}
+	/* keep things lined up vertically
+	   accounts for padding and background color on a:hover */
+	body>header nav .first a { 
+		margin-left: -0.5em;
+	}
 }
 /* --- TABLET PORTRAIT + --- */
 @media only screen and (min-width: 768px) {
@@ -554,14 +561,6 @@ body>header nav li {
 	body>footer a:active,
 	body>footer a:visited {
 		color: #666;
-	}
-}
-/* --- DESKTOP 980+ --- */
-@media only screen and (min-width: 980px) {
-	/* keep things lined up vertically
-	   accounts for padding and background color on a:hover */
-	body>header nav .first a { 
-		margin-left: -0.5em;
 	}
 }
 #skiplink a:active,
