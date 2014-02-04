@@ -1,0 +1,285 @@
+/* 	
+	Responsive Starter 04.15.13
+	Visible column styles
+*/
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * DEMO FORMATTING ONLY
+ *  
+ */
+.visible .col {
+	color: #fff;
+	background-color: #EAEAEA;
+	border-radius: 0.2em;
+}
+.visible .no-gutter .col {
+	border-radius: 0;
+	border-right: 1px solid #fff;
+}
+/**
+ * --------------------------------------------------	
+ * TABLET PORTRAIT 768
+ * --------------------------------------------------
+ */
+@media only screen and (min-width: 768px) {
+	.visible .no-gutter .col-1,
+	.visible .no-gutter .span-1,
+	.visible .no-gutter .one {
+		width: 59px;
+	}
+	.visible .no-gutter .col-2,
+	.visible .no-gutter .span-2,
+	.visible .no-gutter .two {
+		width: 119px;
+	}
+	.visible .no-gutter .col-3,
+	.visible .no-gutter .col-1-4,
+	.visible .no-gutter .span-3,
+	.visible .no-gutter .span-1-4,
+	.visible .no-gutter .three,
+	.visible .no-gutter .one-quarter {
+		width: 179px;
+	}
+	.visible .no-gutter .col-4,
+	.visible .no-gutter .col-1-3,
+	.visible .no-gutter .span-4,
+	.visible .no-gutter .span-1-3,
+	.visible .no-gutter .four,
+	.visible .no-gutter .one-third {
+		width: 239px;
+	}
+	.visible .no-gutter .col-5,
+	.visible .no-gutter .span-5,
+	.visible .no-gutter .five {
+		width: 299px;
+	}
+	.visible .no-gutter .col-6,
+	.visible .no-gutter .col-1-2,
+	.visible .no-gutter .span-6,
+	.visible .no-gutter .span-1-2,
+	.visible .no-gutter .six,
+	.visible .no-gutter .half {
+		width: 359px;
+	}
+	.visible .no-gutter .col-7,
+	.visible .no-gutter .span-7,
+	.visible .no-gutter .seven {
+		width: 419px;
+	}
+	.visible .no-gutter .col-8,
+	.visible .no-gutter .col-2-3,
+	.visible .no-gutter .span-8,
+	.visible .no-gutter .span-2-3,
+	.visible .no-gutter .eight,
+	.visible .no-gutter .two-thirds {
+		width: 479px;
+	}
+	.visible .no-gutter .col-9,
+	.visible .no-gutter .col-3-4,
+	.visible .no-gutter .span-9,
+	.visible .no-gutter .span-3-4,
+	.visible .no-gutter .nine,
+	.visible .no-gutter .three-quarters {
+		width: 539px;
+	}
+	.visible .no-gutter .col-10,
+	.visible .no-gutter .span-10,
+	.visible .no-gutter .ten {
+		width: 599px;
+	}
+	.visible .no-gutter .col-11,
+	.visible .no-gutter .span-11,
+	.visible .no-gutter .eleven {
+		width: 659px;
+	}
+	.visible .no-gutter .col-12,
+	.visible .no-gutter .span-12,
+	.visible .no-gutter .span-all,
+	.visible .no-gutter .twelve,
+	.visible .no-gutter .all,
+	.visible .no-gutter .full {
+		width: 719px;
+	}
+}
+/**
+ * --------------------------------------------------	
+ * DESKTOP 960
+ * --------------------------------------------------
+ */
+@media only screen and (min-width: 980px) {
+	.visible .no-gutter .col-1,
+	.visible .no-gutter .span-1,
+	.visible .no-gutter .one {
+		width: 79px;
+	}
+	.visible .no-gutter .col-2,
+	.visible .no-gutter .span-2,
+	.visible .no-gutter .two {
+		width: 159px;
+	}
+	.visible .no-gutter .col-3,
+	.visible .no-gutter .col-1-4,
+	.visible .no-gutter .span-3,
+	.visible .no-gutter .span-1-4,
+	.visible .no-gutter .three,
+	.visible .no-gutter .one-quarter {
+		width: 239px;
+	}
+	.visible .no-gutter .col-4,
+	.visible .no-gutter .col-1-3,
+	.visible .no-gutter .span-4,
+	.visible .no-gutter .span-1-3,
+	.visible .no-gutter .four,
+	.visible .no-gutter .one-third {
+		width: 319px;
+	}
+	.visible .no-gutter .col-5,
+	.visible .no-gutter .span-5,
+	.visible .no-gutter .five {
+		width: 399px;
+	}
+	.visible .no-gutter .col-6,
+	.visible .no-gutter .col-1-2,
+	.visible .no-gutter .span-6,
+	.visible .no-gutter .span-1-2,
+	.visible .no-gutter .six,
+	.visible .no-gutter .half {
+		width: 479px;
+	}
+	.visible .no-gutter .col-7,
+	.visible .no-gutter .span-7,
+	.visible .no-gutter .seven {
+		width: 559px;
+	}
+	.visible .no-gutter .col-8,
+	.visible .no-gutter .col-2-3,
+	.visible .no-gutter .span-8,
+	.visible .no-gutter .span-2-3,
+	.visible .no-gutter .eight,
+	.visible .no-gutter .two-thirds {
+		width: 639px;
+	}
+	.visible .no-gutter .col-9,
+	.visible .no-gutter .col-3-4,
+	.visible .no-gutter .span-9,
+	.visible .no-gutter .span-3-4,
+	.visible .no-gutter .nine,
+	.visible .no-gutter .three-quarters {
+		width: 719px;
+	}
+	.visible .no-gutter .col-10,
+	.visible .no-gutter .span-10,
+	.visible .no-gutter .ten {
+		width: 799px;
+	}
+	.visible .no-gutter .col-11,
+	.visible .no-gutter .span-11,
+	.visible .no-gutter .eleven {
+		width: 879px;
+	}
+	.visible .no-gutter .col-12,
+	.visible .no-gutter .span-12,
+	.visible .no-gutter .span-all,
+	.visible .no-gutter .twelve,
+	.visible .no-gutter .all,
+	.visible .no-gutter .full {
+		width: 959px;
+	}
+}
+/**
+ * --------------------------------------------------	
+ * DESKTOP 1200
+ * --------------------------------------------------
+ */
+@media only screen and (min-width: 1230px) {
+	.visible .no-gutter .col-1,
+	.visible .no-gutter .span-1,
+	.visible .no-gutter .one {
+		width: 99px;
+	}
+	.visible .no-gutter .col-2,
+	.visible .no-gutter .span-2,
+	.visible .no-gutter .two {
+		width: 199px;
+	}
+	.visible .no-gutter .col-3,
+	.visible .no-gutter .col-1-4,
+	.visible .no-gutter .span-3,
+	.visible .no-gutter .span-1-4,
+	.visible .no-gutter .three,
+	.visible .no-gutter .one-quarter {
+		width: 299px;
+	}
+	.visible .no-gutter .col-4,
+	.visible .no-gutter .col-1-3,
+	.visible .no-gutter .span-4,
+	.visible .no-gutter .span-1-3,
+	.visible .no-gutter .four,
+	.visible .no-gutter .one-third {
+		width: 399px;
+	}
+	.visible .no-gutter .col-5,
+	.visible .no-gutter .span-5,
+	.visible .no-gutter .five {
+		width: 499px;
+	}
+	.visible .no-gutter .col-6,
+	.visible .no-gutter .col-1-2,
+	.visible .no-gutter .span-6,
+	.visible .no-gutter .span-1-2,
+	.visible .no-gutter .six,
+	.visible .no-gutter .half {
+		width: 599px;
+	}
+	.visible .no-gutter .col-7,
+	.visible .no-gutter .span-7,
+	.visible .no-gutter .seven {
+		width: 699px;
+	}
+	.visible .no-gutter .col-8,
+	.visible .no-gutter .col-2-3,
+	.visible .no-gutter .span-8,
+	.visible .no-gutter .span-2-3,
+	.visible .no-gutter .eight,
+	.visible .no-gutter .two-thirds {
+		width: 799px;
+	}
+	.visible .no-gutter .col-9,
+	.visible .no-gutter .col-3-4,
+	.visible .no-gutter .span-9,
+	.visible .no-gutter .span-3-4,
+	.visible .no-gutter .nine,
+	.visible .no-gutter .three-quarters {
+		width: 899px;
+	}
+	.visible .no-gutter .col-10,
+	.visible .no-gutter .span-10,
+	.visible .no-gutter .ten {
+		width: 999px;
+	}
+	.visible .no-gutter .col-11,
+	.visible .no-gutter .span-11,
+	.visible .no-gutter .eleven {
+		width: 1099px;
+	}
+	.visible .no-gutter .col-12,
+	.visible .no-gutter .span-12,
+	.visible .no-gutter .span-all,
+	.visible .no-gutter .twelve,
+	.visible .no-gutter .all,
+	.visible .no-gutter .full {
+		width: 1199px;
+	}
+}
+/**
+ * --------------------------------------------------	
+ * TABLET PORTRAIT
+ * --------------------------------------------------
+ */
+@media only screen and (min-width: 768px) {
+	.visible .row {
+		height: 2em;
+	}
+}
