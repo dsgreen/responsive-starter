@@ -32,7 +32,11 @@ section, article, header, footer, nav, aside, hgroup { display: block; }
  * TYPE
  *  
  */
-/* --- MOBILE + --- */
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
 /* 
  * type references:
  * original method:  http://clagnut.com/blog/348/
@@ -121,9 +125,18 @@ abbr[title]:hover {
 @media only screen and (min-width: 980px) {
 	blockquote { width: 70%; }
 }
-/* FORMS
--------------------------------------- */
-/* --- MOBILE + --- */
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * FORMS
+ *  
+ */
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
 /* form elements not aligned to baseline grid */
 label {
 	display: block;
@@ -179,9 +192,18 @@ label.hidden {
 		width: 15em;
 	}
 }
-/* LAYOUT
--------------------------------------- */
-/* --- MOBILE + --- */
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * LAYOUT
+ *  
+ */
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
 /* padding for small displays */
 body {
 	padding: 0 1em;
@@ -236,7 +258,11 @@ body>footer p.top {
 	left: 0.2em;
 	z-index: 5;
 }
-/* --- MOBILE LANDSCAPE / 7" TABLET PORTRAIT + --- */
+/**
+ * -------------------------------------------------- 
+ * MOBILE LANDSCAPE / 7" TABLET PORTRAIT
+ * --------------------------------------------------
+ */
 @media only screen and (min-width: 480px) {
 	/* linear main navigation bar */
 	body>header nav ul,
@@ -293,8 +319,13 @@ body>footer p.top {
 		width: 1200px;
 	}
 }
-/* CLASSES
--------------------------------------- */
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * CLASSES
+ *  
+ */
 /* general */
 .left {
 	float: left;
@@ -1211,10 +1242,18 @@ form .row {
 	.col.offset-11.no-gutter {		margin-left: 1100px; }
 
 }
-
-/* BASIC 2 COLUMN LAYOUT
--------------------------------------- */
-/* --- MOBILE + --- */
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * BASIC 2 COLUMN LAYOUT
+ *  
+ */
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
 /* sidebar */
 #secondary {
 	margin-top: 1em;
@@ -1254,9 +1293,18 @@ form .row {
 		text-transform: uppercase;
 	}
 }
-/* COLOR
--------------------------------------- */
-/* --- MOBILE + --- */
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * COLOR
+ *  
+ */
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
 body {
 	color: #333;
 	background-color: #fff;
@@ -1304,7 +1352,11 @@ input.btn:focus {
 body>header nav li {
 	margin-bottom: 0.25em;
 }
-/* --- MOBILE LANDSCAPE / 7" TABLET PORTRAIT + --- */
+/**
+ * -------------------------------------------------- 
+ * MOBILE LANDSCAPE / 7" TABLET PORTRAIT
+ * --------------------------------------------------
+ */
 @media only screen and (min-width: 480px) {
 	/* main navigation */
 	body>header nav a {
@@ -1372,8 +1424,13 @@ input.btn:hover, input.btn:focus {
 .author {
 	color: #333;
 }
-/* IE
--------------------------------------- */
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * IE
+ *  
+ */
 .ie {}
 .ie9 {}
 .ie8 {}
@@ -1389,8 +1446,13 @@ textarea {
  * and include desktop styles if desired. Otherwise, IE8 gets the mobile version.
  * 
  * */
-/* GRID IMAGE
--------------------------------------- */
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * GRID IMAGE
+ *  
+ */
 /* 
  * Display a grid image two different ways.
  * 
@@ -1485,9 +1547,13 @@ html, body, body>header, body>footer {
 		/*background: url('../images/1200-grid.png') repeat-y center top;*/
 	}
 }
-
-/* OTHER OPTIONS
--------------------------------------- */
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * OTHER OPTIONS
+ *  
+ */
 /* 
  * Logo: image replacement option 
  * - specify width, height, and source of image
